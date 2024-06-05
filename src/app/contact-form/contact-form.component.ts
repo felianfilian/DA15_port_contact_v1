@@ -10,4 +10,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class ContactFormComponent {
 
+
+  onSubmit() {
+    alert("mail send");
+  }
 }
