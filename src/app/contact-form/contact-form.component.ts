@@ -17,6 +17,6 @@ export class ContactFormComponent {
   }
 
   onSubmit() {
-    alert("mail send");
+    console.log(this.contactData);
   }
 }
