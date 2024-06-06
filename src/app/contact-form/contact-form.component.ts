@@ -12,7 +12,8 @@ export class ContactFormComponent {
 
   contactData = {
     name: "Mario",
-    email: "mario@pario",
+    mail: "mario@pario",
+    gender: "Male",
     message: "Hello",
   }
 

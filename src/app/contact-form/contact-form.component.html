@@ -4,17 +4,10 @@
       <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Name">
   
       <label for="mail">Email</label>
-      <input type="text" id="mail" name="name" placeholder="E-Mail">
+      <input [(ngModel)]="contactData.mail" type="text" id="mail" name="name" placeholder="E-Mail">
 
-      <label for="gender">Gender</label>
-      <select id="gender" name="gender">
-        <option value="australia">Male</option>
-        <option value="canada">Female</option>
-        <option value="usa">Diverse</option>
-      </select>
-  
       <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+      <textarea [(ngModel)]="contactData.message" id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
   
       <input type="submit" value="Send Mail">
     </form>
