@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -16,7 +16,7 @@ export class ContactFormComponent {
     message: "Hello",
   }
 
-  onSubmit() {
+  onSubmit(ngForm: NgForm) {
     console.log(this.contactData);
   }
 }
