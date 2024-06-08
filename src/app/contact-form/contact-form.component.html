@@ -8,8 +8,8 @@
 
       <label for="subject">Subject</label>
       <textarea #message="ngModel" [(ngModel)]="contactData.message" id="subject" name="subject" placeholder="Your message" style="height:200px" required=""></textarea>
-      @if(!message.valid && message.touched && message.disabled) {
-        <span>please enter a message</span>
+      @if(!message.valid && message.touched) {
+        <span class="error-msg">please enter a message</span>
       }
 
       <input type="submit" value="Send Mail">
