@@ -39,7 +39,7 @@ export class ContactFormComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            // for own functions
             ngForm.resetForm();
           },
           error: (error) => {
@@ -48,7 +48,7 @@ export class ContactFormComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      // for testing
       ngForm.resetForm();
     }
   }
