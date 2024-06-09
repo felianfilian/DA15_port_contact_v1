@@ -16,6 +16,8 @@ export class ContactFormComponent {
     message: "Hello",
   }
 
+  mailTest = true;
+
   onSubmit(ngForm: NgForm) {
     if(ngForm.valid && ngForm.submitted)
     console.log(this.contactData);
