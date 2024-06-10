@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
@@ -15,6 +16,8 @@ export class ContactFormComponent {
     mail: "mario@pario",
     message: "Hello",
   }
+
+  http = inject(HttpClient);
 
   mailTest = true;
 
